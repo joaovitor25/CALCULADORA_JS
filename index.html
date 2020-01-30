@@ -14,42 +14,53 @@
           } else{
                 alert("O campo de texto não pode estar vazio");       
             }
-        }   
-        function tipo(){
-            var new_tipo = document.getElementById('novo_tipo').value;
-            
-            if(new_tipo != ""){
-                debugger;
-                document.getElementById('nome').innerHTML = new_tipo;
-            } else{
-                alert("O campo de texto não pode estar vazio");
-            }
-            
         }
-        function position(){
-            var input1 = document.getElementById('novo_nome').innerHTML;
-            var input2 = document.getElementById('novo_tipo').innerHTML;
-            var posicao = document.getElementById('nome').innerHTML;
-            var valorh1 = posicao
-            var divide = valorh1.split("_");
-            alert(divide)
+        function valor_um(){
+            
+
+            var valor = document.getElementById('valor_1').value;
+            document.getElementById('nome').innerHTML = valor;
+            
             debugger;
-               
+        } 
+       function valor_dois(){
+            
+
+            var valor = document.getElementById('valor_2').value;
+            document.getElementById('nome').innerHTML = valor;
+            
+            debugger;
+        }
+        function valor_tres(){
+            
+
+            var valor = document.getElementById('valor_3').value;
+            document.getElementById('nome').innerHTML = valor;
+            
+            debugger;
         }
         
     </script>
+    <style type="text/css">
+        .tamanho_input{
+            height: 50px;
+            width:20%;
+        }
+
+    </style>
+    
 </head>
 
 <body>
-    <label for="novo_nome">Valor</label>
-    <input type="text" id="novo_nome"  placeholder="Digite um valor..." size="">
-    <input type="text" id="novo_tipo"  placeholder="Digite um valor..." size="">
+    
+    <input type="text" id="novo_nome" class="tamanho_input" placeholder="Digite um valor_um...">
+    <input type="button"  onclick="hassim()" value="valor" >
     <h1 id="nome" >Hassim</h1>
     <br><br>
     
-    <input type="button"  onclick="hassim()" value="1" >
-    <input type="button"  onclick="tipo()" value="2">
-    <input type="button" onclick="position()" value="posição" >
+    <input type="button" id="valor_1"  onclick="valor_um()" value="1" >
+    <input type="button" id="valor_2"  onclick="valor_dois()" value="2">
+    <input type="button" id="valor_3" onclick="valor_tres()"  value="3" >
     
     
     
