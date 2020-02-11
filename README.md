@@ -1,7 +1,3 @@
 # CALCULADORA_JS
 comandos pra fazer calculadora
-
-
-# teste
-## testre
-### testes
+estou tentando passar o valor do botão para o input texto, mas estou esquecendo de alguma coisa.
