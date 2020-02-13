@@ -9,8 +9,13 @@
 </head>
 
 <body>
-
-    <input type="text" id="novo_nome" id="printa_na_tela" class="tamanho_input" value="" placeholder="Digite um valor_um...">
+    <!--Removi esse placeholder que nao faz sentido mais , pois ja foram criados os botoes de valores ==> placeholder="Digite um valor_um..."-->
+    <!--estou me perguntando por que tem dois ID's ?-->    
+    
+    <input type="text" id="novo_nome" id="printa_na_tela" class="tamanho_input" value="" readonly >
+    
+        <!--Tela 2 feita com DIV-->
+    <div type="text" id="tela2" readonly ></div>
 
     <br><br>
 
@@ -27,13 +32,17 @@
     <input type="button" onclick="valor_botao(this)" value="-">
     <input type="button" onclick="valor_botao(this)" value="/"><br>
     <input type="button" onclick="valor_botao(this)" value="*">
-    <input type="button" onclick="posicao()" value=" = ">
-    <input type="button" value="tela" id="printa_na_tela" onclick="printar_na_tela()">
+  
+     <!-- A FUNCAO tem nome sem sentido
+      <input type="button" onclick="posicao()" value=" = ">
+    -->
+    
+    <input type="button" value="=" id="printa_na_tela" onclick="printar_na_tela()">
 
-
-
-
+<!--inserindo a tag footer só pra separar-->
+   <footer>
     <script src="js/script.js"></script>
+   </footer>
 
-
-</body></html>
+</body>
+</html>
