@@ -1,9 +1,9 @@
 # ALGORITIMOS BASICOS A SEGUIR
 ## Função : Resolver as 4 operações básicas da matemática como numa calculadora simples Real
 
-[X] Criar tela simples com botoes input
-[X] Criar função para receber o elemento clicado (botoes input)
-[ ] Mostrar na "Telinha" o valor referente ao primeiro numero para ser calculado
+* [X] Criar tela simples com botoes input
+* [X] Criar função para receber o elemento clicado (botoes input)
+* [ ] Mostrar na "Telinha" o valor referente ao primeiro numero para ser calculado
 [X] Receber Operador pelo botao clicado
 [X] Receber segundo numero a ser calculado
 [ ] Mostrar na telinha o segundo numero digitado (sem aparecer o primeiro numero e nem o operador) 
