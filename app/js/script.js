@@ -8,8 +8,10 @@ var numeros = [];
 
 /*FUNCOES*/
 function valor_botao(e) {
-
-            
+    
+       var x = valida_operador(e.value);
+       var y = printar_na_tela()//adcionei esta variavel da função printa na tela
+    
     //para saber se algum numero ja foi clicado
     if (numeros.length > 0) {
        
@@ -39,7 +41,7 @@ function valor_botao(e) {
     valida_operador( AQUI VC DEVE PASSAR QUAL A VARIAVEL OU VALOR QUE QUER ENVIAR PRA DENTRO DA FUNCAO  )
     
     */
-    var x = valida_operador();//A chamada da função está correta desde que tenha return;
+    //var x = valida_operador(e.value);//A chamada da função está correta desde que tenha return;
 }
 
 
@@ -50,7 +52,7 @@ Essa letra E que esta entre parenteses é o parametro que a função "function v
 
 */
 
-function valida_operador(e) {
+function valida_operador(valor) {
     //voce nao usou o: e 
     //entao ele ficou inutil aí, esse cara é o parametro que vem dos botoes
     
@@ -59,8 +61,25 @@ function valida_operador(e) {
     var posicao1 = parseInt(numeros[0])
     var posicao2 = parseInt(numeros[1])
     alert(posicao1 + posicao2)
-
-*/
+    
+*/  
+    debugger;
+    var operadores = []//recebe nuúmeros
+    var y;
+    operadores.push(valor);//adcineis para adicionar os números na lista de operadores
+    alert(operadores)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
@@ -72,8 +91,10 @@ function printar_na_tela(){
     var tela = numeros;//imprimir os numeros nao faz sentido
     
     //document.getElementById('printa_na_tela').innerHTML = tela;// faz sentido comentei pra deixar um exmeplo fixo
-    document.getElementById('printa_na_tela').innerHTML = 123;
     
+    document.getElementById('novo_nome').value = tela;
+    document.getElementById('tela2').innerHTML = tela;//adicionei para mostrar na div os numeros mas etsa em teste
+
     
     
 }
