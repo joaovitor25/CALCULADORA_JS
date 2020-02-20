@@ -1,8 +1,12 @@
 /*VARIAVEIS GLOBAIS*/
 var numeros = [];
+var operadores = []
+alert(operadores)
 
-
-
+function verifica_numeros(){
+    
+    numeros
+}
 
 
 
@@ -18,9 +22,11 @@ function valor_botao(e) {
         //Separação dos numeros e Operações
         
         //CASO ALGUMA OPERACAO FOR DIGITADA VC ESTA IGNORANDO
-        if(e.value != "+" &&  "-" &&  "/" &&  "*"){
+        if(e.value != "+" && e.value !=  "-" && e.value != "/" && e.value != "*"){
             numeros[numeros.length] = e.value;
-        }
+        } else{
+            operadores[operadores.length] = e.value;
+            }
         
         /*
         Voce poderia colocar o else aqui e guaradar as operações em outra variavel (nao precisava ser array)
@@ -34,6 +40,11 @@ function valor_botao(e) {
     } else {
         numeros[0] = e.value;
     }
+    debugger;
+    var numeroUm = numeros[0];
+    var numeroDois = numeros[1];
+    var calcula = operadores;
+    console.log(calcula);
 
     //Recomendo sempre criar um nome valido para variaveis ao inves de a,b,c x, y,z....
     /*
