@@ -3,18 +3,15 @@ var numeros = [];
 var operadores = []
 alert(operadores)
 
-function verifica_numeros(){
-    
-    numeros
-}
+
 
 
 
 /*FUNCOES*/
 function valor_botao(e) {
-    
+        
        var x = valida_operador(e.value);
-       var y = printar_na_tela()//adcionei esta variavel da função printa na tela
+       //adcionei esta variavel da função printa na tela
     
     //para saber se algum numero ja foi clicado
     if (numeros.length > 0) {
@@ -24,6 +21,8 @@ function valor_botao(e) {
         //CASO ALGUMA OPERACAO FOR DIGITADA VC ESTA IGNORANDO
         if(e.value != "+" && e.value !=  "-" && e.value != "/" && e.value != "*"){
             numeros[numeros.length] = e.value;
+            
+            var y = printar_na_tela();
         } else{
             operadores[operadores.length] = e.value;
             }
@@ -39,12 +38,9 @@ function valor_botao(e) {
                
     } else {
         numeros[0] = e.value;
+        var y = printar_na_tela();
     }
-    debugger;
-    var numeroUm = numeros[0];
-    var numeroDois = numeros[1];
-    var calcula = operadores;
-    console.log(calcula);
+    document.write(verifica_numeros());
 
     //Recomendo sempre criar um nome valido para variaveis ao inves de a,b,c x, y,z....
     /*
@@ -54,7 +50,37 @@ function valor_botao(e) {
     */
     //var x = valida_operador(e.value);//A chamada da função está correta desde que tenha return;
 }
-
+function verifica_numeros(){
+    debugger;
+    var numeroUm = null;
+    while(numeros[0] != "+" && numeros[0] !=  "-" && numeros[0] != "/" && numeros[0] != "*"){
+        if(numeroUm == null){
+            numeroUm = numeros[0];
+            numeros[0].shift();
+           } else{
+                numeroUm = numeros[0] + numero;
+                numeros[0].shift();
+                
+           }
+    alert(numeroUm);
+    } else{
+        opera = operadores[0];
+        numeros[0].shift();
+        while(numeros.length != 0){
+            while(numeros[0] != "+" && numeros[0] !=  "-" && numeros[0] != "/" && numeros[0] != "*"){
+                if(numeroUm == null){
+                    numeroUm = numeros[0];
+                    numeros[0].shift();
+                } else{
+                    numeroUm = numeros[0] + numero;
+                    numeros[0].shift();
+                
+                }
+        }
+    }
+    
+        
+}
 
 
 
@@ -74,7 +100,7 @@ function valida_operador(valor) {
     alert(posicao1 + posicao2)
     
 */  
-    debugger;
+    
     var operadores = []//recebe nuúmeros
     var y;
     operadores.push(valor);//adcineis para adicionar os números na lista de operadores
