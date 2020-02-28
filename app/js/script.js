@@ -9,7 +9,7 @@ alert(operadores)
 
 /*FUNCOES*/
 function valor_botao(e) {
-        
+        debugger;
        var x = valida_operador(e.value);
        //adcionei esta variavel da função printa na tela
     
@@ -42,13 +42,7 @@ function valor_botao(e) {
     }
     document.write(verifica_numeros());
 
-    //Recomendo sempre criar um nome valido para variaveis ao inves de a,b,c x, y,z....
-    /*
-    Se voce nao passa o parametro dentro dos parenteses a funcao nao recebe o valor que vc esta enviando
-    valida_operador( AQUI VC DEVE PASSAR QUAL A VARIAVEL OU VALOR QUE QUER ENVIAR PRA DENTRO DA FUNCAO  )
-    
-    */
-    //var x = valida_operador(e.value);//A chamada da função está correta desde que tenha return;
+   
 }
 function verifica_numeros(){
     debugger;
@@ -63,7 +57,7 @@ function verifica_numeros(){
                 
            }
     alert(numeroUm);
-    } else{
+    } /*else{
         opera = operadores[0];
         numeros[0].shift();
         while(numeros.length != 0){
@@ -77,7 +71,7 @@ function verifica_numeros(){
                 
                 }
         }
-    }
+    }}*/
     
         
 }
@@ -154,3 +148,7 @@ function hassim() {
 }
 */
 
+    
+    
+    
+    
